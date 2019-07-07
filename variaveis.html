@@ -26,16 +26,36 @@
              var humano = true ;
              
              // Objeto 
-             var usuario = {
+             var usuario1 = {
                  nome:'Marcus' ,
                  idade: 51,
                  peso:69.7,
                  livros: ['Admiravel Mundo Novo', 'Biblia', 'Triade do Tempo']
              }
 
+             var usuario2 = {
+                 nome:'Helena' ,
+                 idade: 75,
+                 peso:53.4,
+                 livros: ['Biblia', 'Como tomar posse'],
+                 endereco: {
+                     logradouro:'Avenida Nelson Cardoso',
+                     numero:143,
+                     complemento: 'apto 1203 Bl 1',
+                     Bairro: 'Jacarepagua',
+                     Estado:'Rio de Janeiro'
+
+                 }
+             }
+
+             // 
+             var Usuarios = [ usuario1, usuario2 ]
+
+
+
              //console.log("Meu nome é " + nome ) ;
              //console.log('Meus Livros favoritos - ' + livros )
-             console.log( usuario  )
+             console.log( "Usuario : " + Usuarios[1].nome  + " Bairro - " + Usuarios[1].endereco.Bairro )
         </script>
     </body>
 </html>
