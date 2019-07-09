@@ -17,7 +17,7 @@
                return resultado ;
         }
 
-        console.log( soma( 4 , 6  ) )
+       // console.log( soma( 4 , 6  ) )
 
 
         const objCalc = {
@@ -32,10 +32,18 @@
              }
         }
 
-        // Utilizando funções dentro de um Objeto
-        console.log( objCalc.somar( 13 , 4  )  ) 
+        //Função com parametros pre fixados
+        function adicao( v1 = 0, v2=0 ){
 
-        console.log( objCalc.multiplicar( 3 , 5 ) )
+            return v1 + v2 ;
+
+        }
+
+         // Utilizando funções dentro de um Objeto
+        // console.log( objCalc.somar( 13 , 4  )  ) 
+        //console.log( objCalc.multiplicar( 3 , 5 ) )
+
+        console.log( adicao() )
 
 
 
