@@ -1,16 +1,52 @@
 <html>
-    <head>
-        <title>  Curso JS  </title>
-        <link rel="stylesheet" href="style.css"  type="text/css" >
-    </head>
-    <body>
-         <div  class="bar-back-home" > <a href="index.html"> Home </a>  </div>
-         <h2 class="title-page-topics" > Condicionais em JS </h2>
 
-         
-        
-        <script>
+<head>
+    <title> Curso JS </title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <div class="bar-back-home"> <a href="index.html"> Home </a> </div>
+    <h2 class="title-page-topics"> Condicionais em JS </h2>
+
+
+
+    <script>
+        // IF ELSE ELSE IF SWItch CASE
+
+        function chooseAction(action = 'n') { // n = nada , p=projeto, m = meta t= tarefa
+
+            if (action == 'p') {
+                return "Abrir Tela Novo Projeto"
+            } else if (action == 'm') {
+                return "Abrir Tela Nova META";
+            } else {
+                return "Abrir Tela - Lista de Tarefas"
+       c     }
+        }
+
+        function chooseActionV2(action = 'n') { // n = nada , p=projeto, m = meta t= tarefa
+             switch( action ) {
+                 case 'p' :
+                 return "Projeto" ;
+                 case 'm' :
+                 return "META" ;
+                 case 't' :
+                 return "Listar TAREFAS" ;
+                 default:
+                 return "Tela de Login"
+
+
+             }  
+            
+        }
+
         console.log(" CONDICIONAIS ")
-     </script>
-    </body>
+
+       // console.log(chooseAction('p'))
+       console.log( chooseActionV2(  ) )
+
+    </script>
+</body>
+
 </html>
