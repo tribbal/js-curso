@@ -11,6 +11,28 @@
         
         <script>
         console.log("Operadores Logicos")
+
+          var sexo = 'M' , idade = 17 , time = "vasco" , profissao = 'Progamador'; 
+          var linguagem = 'javascript' ,  id = 0 ;
+
+          if( sexo == 'M' && idade < 18 ){
+              console.log( "Voce é um homen menor de idade"  )
+          }
+
+          if( time != 'flamengo' ||  profissao == 'Progamador'  ){
+              console.log( "Pessoa inteligente"  )
+          }
+
+          // IF TERNARIO
+          var skil = ( linguagem == 'javascript' )? 'Contratado' : 'Estudar JavaScript' ;
+          console.log( skil  ) ;
+
+          var statusLogin = ( id > 100  )? true : false ;
+          console.log( "Usuario esta logado? - " + statusLogin ) 
+
+ 
+
+
      </script>
     </body>
 </html>
