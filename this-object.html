@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>  Curso JS  </title>
+        <link rel="stylesheet" href="style.css"  type="text/css" >
+    </head>
+    <body>
+         <div  class="bar-back-home" > <a href="index.html"> Home </a>  </div>
+         <h2 class="title-page-topics" > A utilização de THIS  </h2>
+         <h3>THIS é a referencia do objeto na função corrente </h3>
+
+         
+        
+        <script>
+        console.log("Refernciando um OBJETO com keyword THIS")
+
+        // method -> obj - Escopo de um THIS numa funcçao dentro de um Objeto
+        // function -> global ( Window , global ) - Escopo do THIS numa função regular
+
+        // Dentro de um Objeto
+        const Video = {
+            title: 'Video Como Progamar em' ,
+            tags: [ 'javascript', 'NodeJs', 'React'] , 
+            play(){
+                console.log( this.title )
+            } ,
+
+            showTags(){
+
+                    this.tags.forEach( (tag)=>{
+                         console.log( this.title, ' - ' ,tag )
+                    } , this )
+
+            } ,
+        } ;
+
+       // Video.play() ;
+          Video.showTags() ;  
+
+        // Função Regular 
+        //function VideoPlay(){
+        //     console.log(  this )
+        // }
+
+        function VideoPlay( title ){
+            this.titulo = title ;
+            console.log( this.titulo ) ;
+        }
+
+        //VideoPlay() ;
+
+        //const v = new VideoPlay('Jesus Cristo é o Senhor')
+        
+
+
+
+
+
+     </script>
+    </body>
+</html>
